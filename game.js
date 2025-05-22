@@ -171,7 +171,7 @@ function lockBlock() {
   currentBlock.row = prev.row - 1;
   stack.push(currentBlock);
 
-  if (currentBlock.row < 0) {
+  if (currentBlock.row <= 0) {
     win = true;
     gameOver = true;
     return;
